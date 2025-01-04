@@ -35,6 +35,7 @@ body {
     justify-content: center;
     list-style: none;
     padding: 0;
+    
   }
   
   nav ul li {
@@ -51,7 +52,7 @@ body {
   section {
     padding: 20px 0;
     margin: 20px 0;
-    background: #fff;
+    background: #18a5e1;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -63,6 +64,9 @@ body {
   
   #about p, #contact p {
     text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   /* Projects Grid */
