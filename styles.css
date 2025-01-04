@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 20;
     padding: 20;
-    background-color: white; /* color has been changed*/
+    background-color: white; /* color has been changed from orange to white*/
     color: #333;
   }
   body.dark-mode {
@@ -20,7 +20,7 @@ body {
   
   /* Header */
   header {
-    background-color: #003366;
+    background-color: #9c0303;
     color: #fff;
     padding: 20px 0;
   }
@@ -51,18 +51,19 @@ body {
   section {
     padding: 20px 0;
     margin: 20px 0;
-    background: #fff;
+    background: black;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   section h2 {
     text-align: center;
-    color: #003366;
+    color: #9c0303;
   }
   
   #about p, #contact p {
     text-align: center;
+    color: white; 
   }
   
   /* Projects Grid */
@@ -84,3 +85,40 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
   }
+/* Horizontal Skills List */
+#skills ul {
+  display: flex; /* Arrange list items in a row */
+  justify-content: center; /* Center the list horizontally */
+  gap: 20px; /* Add spacing between items */
+  padding: 0; /* Remove default padding */
+  list-style-type: none; /* Remove bullets */
+}
+
+#skills li {
+  font-size: 16px; /* Adjust text size */
+  color: #333; /* Set text color */
+  /*border: 1px solid #ddd;  Add a subtle border */
+  padding: 5px 15px; /* Add padding inside each skill */
+  border-radius: 10px; /* Make the borders rounded */
+  background-color: #f9f9f9; /* Add a light background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  /*transition: transform 0.2s, background-color 0.2s; /* Smooth hover effect */
+}
+
+#skills li:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  background-color: #eef; /* Change background color on hover */
+}
+
+img {
+  width: 300px;
+  height: 400px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
