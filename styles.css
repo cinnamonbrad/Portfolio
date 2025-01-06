@@ -37,12 +37,14 @@ body {
     justify-content: center;
     list-style: none;
     padding: 0;
-
+    border-radius: 10px; 
     
   }
   
   nav ul li {
     margin: 0 10px;
+    padding: 5px 15px; 
+    
   }
   
   nav ul li a {
@@ -50,7 +52,10 @@ body {
     text-decoration: none;
     font-weight: bold;
   }
-  
+  nav ul li:hover {
+    transform: scale(1.05); 
+    background-color: #18a5e1; 
+  }
   /* Sections */
   section {
     padding: 20px 0;
@@ -109,6 +114,11 @@ body {
   background-color: #f9f9f9; /* Add a light background color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   /*transition: transform 0.2s, background-color 0.2s; /* Smooth hover effect */
+}
+
+#skills li:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  background-color: #eef; /* Change background color on hover */
 }
 
 img {
