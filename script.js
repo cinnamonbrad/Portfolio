@@ -23,4 +23,8 @@ const greet2 = (name) => `Hello ${name}`; /* Arrow functions do not use the func
 
 console.log(greet2("Alex")); 
 
+counter = 0; 
 
+nav.addEventListener("click", function(counter){
+
+})
