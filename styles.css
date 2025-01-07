@@ -122,9 +122,7 @@ body {
   transform: scale(1.05); /* Slightly enlarge on hover */
   background-color: #eef; /* Change background color on hover */
 }
-.a {
-  color: white; 
-}
+
 img {
   width: 300px;
   height: 400px;
