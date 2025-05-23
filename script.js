@@ -38,11 +38,7 @@ const firstEven = numbers.find((num) => num % 2 === 0);
 console.log(firstEven);
 numbers.sort((a,b) => b - a);
 console.log(numbers);
-// const aFunc = (acc, num) => acc + num;
-// const aFunc = (num) => num % 2 === '0';
-// for (let i = 0; i < names.length; i++) {
-//     console.log(names[i]);
-// }
+
 const fruits = ["apple", "banana", "cherry"];
 fruits.forEach((fruit) => console.log(fruit));
 
