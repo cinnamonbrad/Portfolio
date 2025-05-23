@@ -45,9 +45,48 @@ console.log(numbers);
 // }
 const fruits = ["apple", "banana", "cherry"];
 fruits.forEach((fruit) => console.log(fruit));
-counter = 0; 
 
-document.nav.innerHTML = countText; 
-a.addEventListener("click", function(counter){
- counter = counter +1; 
-})
+const mySkills = document.querySelectorAll("#skills li");
+console.log(mySkills);
+mySkills.forEach((skill) => {
+  skill.addEventListener("mouseover", () => {
+    skill.style.color = "blue";
+  })
+  skill.addEventListener("mouseout", () => {
+    skill.style.color = "";
+  })
+  skill.addEventListener("click", () => {
+    console.log(skill.textContent);
+  })
+});
+const projectCards = document.querySelectorAll(".project");
+projectCards.forEach((project) => {
+  project.addEventListener("mouseover", () => {
+    project.querySelector(".description").style.opacity = 1;
+  });
+  project.addEventListener("mouseout", () => {
+    project.querySelector(".description").style.opacity = 0;
+  });
+});
+/*const userJSON = JSON.stringify(user); 
+console.log(userJSON); 
+const parsedUser = JSON.parse(userJSON); 
+console.log(parsedUser); 
+fetch("https://jsonplaceholder.typicode.com/posts")
+  .then((response)=> response.json()) */
+  /*.then((data) => console.log(data)) 
+  .then((data)=> {
+    data.foreach((post) => {
+      console.log(`ID:  ${post.id}, Title: ${post.title}`)
+    } )
+  })
+  .catch((error => console.log("Error fetching data:", error))); */
+  let count = 0; 
+  document.getElementById("btn").addEventListener("click", () => {
+    count = count + 1; 
+    console.log(count); 
+    document.getElementById("count").innerHTML = `
+    ${count}
+    `}); 
+
+
